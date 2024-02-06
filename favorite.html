@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/js_96_Oleksandr-Gab/assets/favicon-sport-3841f00c.svg" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Favorites</title>
+    
+    <script type="module" crossorigin src="/js_96_Oleksandr-Gab/commonHelpers.js"></script>
+    <link rel="modulepreload" crossorigin href="/js_96_Oleksandr-Gab/assets/vendor-29bef8ec.js">
+    <link rel="modulepreload" crossorigin href="/js_96_Oleksandr-Gab/assets/skroll-btn-a750212d.js">
+    <link rel="stylesheet" href="/js_96_Oleksandr-Gab/assets/vendor-e5212ee8.css">
+    <link rel="stylesheet" href="/js_96_Oleksandr-Gab/assets/skroll-btn-d7e4f4c2.css">
+  </head>
+  <body>
+    <header class="header">
+  <div class="header-wrap container">
+    <a href="./index.html" class="logo-link">energy.flow</a>
+    <div class="menu-back-drop">
+      <nav class="nav" data-menu>
+        <div class="header-wrap-mob index-page">
+          <a href="./index.html" class="logo-link">energy.flow</a>
+          <button type="button" class="menu-btn-close" data-menu-close>
+            <svg width="32" height="32" aria-label="button-menu">
+              <use class="menu-close" href="/js_96_Oleksandr-Gab/assets/sprite-aea79390.svg#icon-close"></use>
+            </svg>
+          </button>
+        </div>
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a
+              href="./index.html"
+              class="nav-link current"
+              data-action="homepage"
+              >Home</a
+            >
+          </li>
+
+          <li class="nav-item">
+            <a
+              href="./favorite.html"
+              class="nav-link"
+              data-action="favoritespage"
+              >Favorites</a
+            >
+          </li>
+        </ul>
+        <div class="social">
+          <ul class="social-list">
+            <li class="social-item">
+              <a
+                href="https://www.facebook.com/goITclub/"
+                class="social-link"
+                target="_blank"
+              >
+                <svg class="social-icon" width="28" height="28">
+                  <use href="/js_96_Oleksandr-Gab/assets/sprite-aea79390.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-item">
+              <a
+                href="https://www.instagram.com/goitclub/"
+                class="social-link"
+                target="_blank"
+              >
+                <svg class="social-icon" width="28" height="28">
+                  <use href="/js_96_Oleksandr-Gab/assets/sprite-aea79390.svg#insta"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-item">
+              <a
+                href="https://www.youtube.com/c/GoIT"
+                class="social-link"
+                target="_blank"
+              >
+                <svg class="social-icon" width="28" height="28">
+                  <use href="/js_96_Oleksandr-Gab/assets/sprite-aea79390.svg#youtube"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+    <div class="social-burger">
+      <ul class="social-list">
+        <li class="social-item">
+          <a
+            href="https://www.facebook.com/goITclub/"
+            class="social-link"
+            target="_blank"
+          >
+            <svg class="social-icon" width="28" height="28">
+              <use href="/js_96_Oleksandr-Gab/assets/sprite-aea79390.svg#facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social-item">
+          <a
+            href="https://www.instagram.com/goitclub/"
+            class="social-link"
+            target="_blank"
+          >
+            <svg class="social-icon" width="28" height="28">
+              <use href="/js_96_Oleksandr-Gab/assets/sprite-aea79390.svg#insta"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social-item">
+          <a
+            href="https://www.youtube.com/c/GoIT"
+            class="social-link"
+            target="_blank"
+          >
+            <svg class="social-icon" width="28" height="28">
+              <use href="/js_96_Oleksandr-Gab/assets/sprite-aea79390.svg#youtube"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <button type="button" class="menu-button-open" data-menu-open>
+      <svg width="32" height="18" aria-label="button menu">
+        <use class="menu-open" href="/js_96_Oleksandr-Gab/assets/sprite-aea79390.svg#menu-burher"></use>
+      </svg>
+    </button>
+  </div>
+</header>
+
+    <section class="quote-day-norm">
+  <div class="container quote-fav-container">
+    <div class="container quote-main quote-retreat">
+      <div class="quote-card">
+        <svg class="quote-runner" width="34" height="32">
+          <use href="/js_96_Oleksandr-Gab/assets/sprite-aea79390.svg#run"></use>
+        </svg>
+        <h2 class="quote-title">Quote of the day</h2>
+        <svg class="quote-commas" width="32" height="32">
+          <use href="/js_96_Oleksandr-Gab/assets/sprite-aea79390.svg#inverted-commas"></use>
+        </svg>
+      </div>
+
+      <div class="quote-fav-info" id="fan-quote"></div>
+    </div>
+
+    <div class="duble">
+      <!--Image -->
+      <div class="quote-sportswear-img"></div>
+
+      <!--Daily norm of sports-->
+      <div class="motivation-sport3">
+        <div class="motivation-sport-item3-fav">
+          <svg class="motivation-sport-item3-icon-fav" width="20" height="20">
+            <use href="/js_96_Oleksandr-Gab/assets/sprite-aea79390.svg#mini-dumbbell"></use>
+          </svg>
+        </div>
+        <h4 class="motivation-sport-title2-fav">110 min</h4>
+        <p class="motivation-sport-text-fav">Daily norm of sports</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <section class="favoritePart container">
+    <div class="favorite-part-container">
+        <h2 class="favoritePart-titel">Favorites</h2>
+        <div class="favoritePartInfo">
+        </div>
+    </div>
+</section>
+
+
+    <div class="div-skroll-btn">
+    <button type="button" class="skroll-btn" >
+        <svg class="skroll-btn-icon">
+            <use href="/js_96_Oleksandr-Gab/assets/sprite-aea79390.svg#icon-up"></use>
+        </svg>
+    </button>
+</div> 
+
+    <div id="exerciseModal">
+  <div id="modal">
+    <button class="close" id="closeModalBtn">
+      <svg class="icon-close">
+        <use href="/js_96_Oleksandr-Gab/assets/sprite-aea79390.svg#icon-close"></use>
+      </svg>
+    </button>
+
+    <div class="modal-content">
+      <div id="information"></div>
+    </div>
+
+    <div class="button-container">
+      <button id="addToFavoritesBtn"></button>
+      <button id="giveRatingBtn">Give a rating</button>
+    </div>
+  </div>
+</div>
+
+    <div class="backdrop js-backdrop-modal">
+    <div class="rating-modal-wrapper">
+        <button class="rating-close js-rating-close" type="button">
+            <svg class="rating-close-svg" width="28" height="28">
+                <use class="rating-close-use" href="/js_96_Oleksandr-Gab/assets/sprite-aea79390.svg#cross"></use>
+            </svg>
+        </button>
+
+        <form class="rating-form js-rating-form">
+            <p class="rating-title">Rating</p>
+            <div class="rating-stars-wrapper">
+                <p class="rating-data js-rating-data">0.0</p>
+                <div class="simple-rating">
+                    <div class="rating-stars-list js-stars-list">
+                        <input class="rating-stars-item" id="rating_5" type="radio" value="5" name="rating" />
+                        <label class="rating-label" for="rating_5" data-rate="5"></label>
+
+                        <input class="rating-stars-item" id="rating_4" type="radio" value="4" name="rating" />
+                        <label class="rating-label" for="rating_4" data-rate="4"></label>
+                        <input class="rating-stars-item" id="rating_3" type="radio" value="3" name="rating" />
+                        <label class="rating-label" for="rating_3" data-rate="3"></label>
+                        <input class="rating-stars-item" id="rating_2" type="radio" value="2" name="rating" />
+                        <label class="rating-label" for="rating_2" data-rate="2"></label>
+                        <input class="rating-stars-item" id="rating_1" type="radio" value="1" name="rating" />
+                        <label class="rating-label" for="rating_1" data-rate="1"></label>
+                    </div>
+                </div>
+            </div>
+            <label>
+                <input class="rating-input" type="email" name="email" placeholder="Email" required />
+            </label>
+            <label>
+                <textarea class="rating-comment" name="comment" maxlength="10000" placeholder="Your comment"
+                    required></textarea>
+            </label>
+            <button class="rating-submit js-raiting-submit">Send</button>
+        </form>
+    </div>
+</div>
+
+    
+  </body>
+</html>
